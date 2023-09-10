@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+</head>
+<body>
+    <h3>
+        Faça um programa que leia dois valores informados pelo usuário e exiba uma das três mensagens a seguir: ‘Números iguais’, caso os números sejam iguais ‘Primeiro é maior’, caso o primeiro seja maior que o segundo; ‘Segundo maior’, caso o segundo seja maior que o primeiro.
+    </h3>
+    <script>
+        let num1 = parseFloat(prompt("escreva o primeiro número "));
+        let num2 = parseFloat(prompt("escreva o segundo número " ));
+
+        if(num1 == num2){
+            document.write("<h3> Números iguais </h3>");
+        }else if(num1 > num2){
+            document.write("<h3> Primeiro é maior </h3>");
+        }else{
+            document.write("<h3> Segundo maior </h3>");
+        }
+
+    </script>
+</body>
+</html>

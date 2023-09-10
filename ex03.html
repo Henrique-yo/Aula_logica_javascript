@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+</head>
+<body>
+    <h3>
+        Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+    </h3>
+
+    <script>
+
+        let num1 = parseFloat(prompt("escreva o primeiro número "));
+        let num2 = parseFloat(prompt("escreva o segundo número " ));
+        let num3 = parseFloat(prompt("escreva o terceiro número " ));
+
+
+        if(num1 == num2 ||num1 == num3){
+            document.write("<h3>Digite outro númmero, não pode valores iguais </h3>")
+        }else if(num1 > num2 && num1 > num3){
+            document.write("<h3> O maior número é " + num1 + "</h3>");
+        }else if(num1 == num2 ||num2 == num3){
+            document.write("<h3>Digite outro númmero, não pode valores iguais </h3>")
+        }else if(num2 > num1 && num2 > num3){
+            document.write("<h3> O maior número é " + num2 + "</h3>");
+        }else if(num3 == num1 ||num3 == num2){
+            document.write("<h3>Digite outro númmero, não pode valores iguais </h3>")
+        }else {
+            document.write("<h3> O maior número é " + num3 + "</h3>");
+        }
+    
+    </script>
+
+    <!-- 
+         if(num1 == num2 ||num1 == num3){
+            document.write("<h3>Digite outro númmero, não pode valores iguais </h3>")
+        }else if(num1 > num2 && num1 > num3){
+            document.write("<h3> O maior número é " + num1 + "</h3>");
+        }else if(num2 == num1 ||num2 == num3){
+            document.write("<h3>Digite outro númmero, não pode valores iguais </h3>")
+        }else if(num2 > num1 && num2 > num3){
+            document.write("<h3> O maior número é " + num2 + "</h3>");
+        }else if(num3 == num1 ||num3 == num2){
+            document.write("<h3>Digite outro númmero, não pode valores iguais </h3>")
+        }else {
+            document.write("<h3> O maior número é " + num3 + "</h3>");
+        }
+     -->
+
+</body>
+</html>

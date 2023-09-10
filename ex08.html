@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex08</title>
+</head>
+<body>
+
+    <h3>
+        Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+
+    </h3>
+    <script>
+        let num1 = parseFloat(prompt("escreva o primeiro número "));
+        let num2 = parseFloat(prompt("escreva o segundo número " ));
+        let num3 = parseFloat(prompt("escreva o terceiro número " ));
+        let num4 = parseFloat(prompt("escreva o quarto número "));
+        
+        if(num1 > 0 && num1 < 10){
+            num1 = num1
+        }else{
+            num1 = 0
+        }
+        if(num2 > 0 && num2 < 10){
+            num2 = num2
+        }else{
+            num2 = 0
+        }
+        if(num3 > 0 && num3 < 10){
+            num3 = num3
+        }else{
+            num3 = 0
+        }
+        if(num4 > 0 && num4 < 10){
+            num4 = num4
+        }else{
+            num4 = 0
+        }
+
+        let res = (num1 + num2 + num3 + num4)/4 ;
+
+        if(res > 5){
+            document.write("<h3> Você passou no teste </h3>")
+        }else{
+            document.write("<h3> tente novamente </h3>");
+        }
+
+        
+    </script>
+</body>
+</html>

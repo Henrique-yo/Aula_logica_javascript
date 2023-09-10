@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex07</title>
+</head>
+<body>
+
+    <h3>
+        Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  
+    </h3>
+    <script>
+        let num1 = parseFloat(prompt("escreva o primeiro número "));
+        let num2 = parseFloat(prompt("escreva o segundo número " ));
+        let num3 = parseFloat(prompt("escreva o terceiro número " ));
+        let num4 = parseFloat(prompt("escreva o quarto número "));
+        let num5 = parseFloat(prompt("escreva o quinto número " ));
+        let num6 = parseFloat(prompt("escreva o sexto número " ));
+        
+        if(num1 < 72){
+            num1 = num1
+        }else{
+            num1 = 0
+        }
+        if(num2 < 72){
+            num2 = num2
+        }else{
+            num2 = 0
+        }
+        if(num3 < 72){
+            num3 = num3
+        }else{
+            num3 = 0
+        }
+        if(num4 < 72){
+            num4 = num4
+        }else{
+            num4 = 0
+        }
+        if(num5 < 72){
+            num5 = num5
+        }else{
+            num5 = 0
+        }
+        if(num6 < 72){
+            num6 = num6
+        }else{
+            num6 = 0
+        }
+
+        let res = num1 + num2 + num3 + num4 + num5 + num6 ;
+
+        document.write("<h3> O resultado é: " + num1 + " + " + num2 + " + " + num3 + " + " + num4 + " + " + num5 + " + " + num6 + " = "+ res +"</h3> <br>");
+
+        document.write("<h3> Os numeros que foi digitado são: " + num1+","+ num2+","+ num3+","+ num4+","+ num5+","+ num6+" </h3>")
+
+        
+    </script>
+</body>
+</html>

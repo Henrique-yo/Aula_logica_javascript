@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex09</title>
+</head>
+<body>
+
+    <h3>
+        Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+
+    </h3>
+    <script>
+        
+        let ano = parseFloat(prompt("Qual ano você nascêu? "));
+
+        let voto = 2023 - ano ;
+
+        if(voto > 16){
+            document.write("você podera votar");
+        }else{
+            document.write("você não podera votar");
+        }
+
+        
+    </script>
+</body>
+</html>
